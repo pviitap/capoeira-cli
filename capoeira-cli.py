@@ -2,21 +2,25 @@ import sys
 import random
 
 attacks = {
-    "martelo": {"target": "head"}
+    "martelo": {"target": "head", "description" : "sidekick"}
     , "compasso": {"target": "ribs"}
     , "armada": {"target": "ribs"}
     , "bencao": {"target": "chest"}
-    , "negativa": {"target": "legs"}
+    , "meia lua de frente": {"target": "head", "description" :"half moon kick"}
+    , "queixada": {"target": "head"}
 }
 defences = {
     "cocorinha": {"counter": ["ribs", "head"]}
     , "negativa": {"counter": ["head"]}
     , "au": {"counter": ["legs"]}
-    , "queda de quatro": {"counter": ["chest", "ribs"]}
+    , "rasteira": {"counter": ["head"], "description" : "sweep"}
+    , "baixa": {"counter": ["head"], "description" : "low ginga"}
+    , "queda de quatro": {"counter": ["chest", "ribs"], "description" : "fall from four"}
 }
 movements = {
     "ginga": {"stance": "high"}
-    , "corta capim": {"stance": "med"}
+    , "role": {"stance": "low"}
+    , "corta capim": {"stance": "low"}
 }
 
 
