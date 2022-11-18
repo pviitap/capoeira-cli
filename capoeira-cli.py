@@ -59,5 +59,5 @@ while True:
     ask_input = input(">> ")
     next_action = \
         [x for x in list(attacks.keys()) + list(defences.keys()) + list(movements.keys()) if x.startswith(ask_input)][0]
-    update()
     player1.next_action = next_action
+    update()
